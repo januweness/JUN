@@ -1,0 +1,46 @@
+#  Initialize git with user account
+#  Only once per machine
+ git config --global user.name "jan-uweness"
+ git config --global user.email juness@sciops.esa.int
+ git config --global color.ui auto
+ git config --global push.default matching
+
+#  Create a repository
+#   in any folder type
+ git init
+ git status
+   # check status
+ 
+#  Add files into staging area
+#   =flag as being tracked
+ git add *.pro
+
+#  Commit to local repository
+ git commit -m "added duty cycles"
+ #  message has to ring a bell when read years later
+
+#  Take a file out of the staging area
+#   before you committed
+#    (e.g. accidentiall included the log files)
+ git reset HEAD filename
+
+#  view log information, past 5 entries
+ git log -5
+  git help log # all the lots of option
+
+#   Creating a branch and switch between
+#    main and other branches
+git branch testing
+git branch 
+> * master
+>  testing
+git checkout testing
+> Switched to branch 'testing'
+git branch
+>  master
+> * testing
+#   Merge side branch into main branch
+git checkout master
+git merge exercise
+#   Most likely need to resolve conflicts.....
+
