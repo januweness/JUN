@@ -44,3 +44,10 @@ git checkout master
 git merge exercise
 #   Most likely need to resolve conflicts.....
 
+#   Remote adding
+#   vis ssh need to add ssh key .ssh/id_rsa.pub
+#   upload in profile page under githib.com
+
+git remote add originssh git@github.com:januweness/JUN.git
+git push -u originssh master
+
